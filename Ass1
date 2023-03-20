@@ -1,0 +1,13 @@
+#include<stdio.h>
+int largest(int,int,int);
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	printf("Largest:%d",largest(a,b,c));
+	return 0;
+}
+int largest(int x,int y,int z)
+{
+	return ((x>y&&x>z)?x:(y>z)?y:z);
+}
